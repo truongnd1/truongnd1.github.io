@@ -118,8 +118,20 @@ ul.task-list input[type="checkbox"] {
 }
 
 .date-column {
-  width: 75px;
-  transform: translateX(-15px) translateY(-5px);
+  min-width: 0;
+  padding-right: 0;
+}
+
+@media (min-width: 768px) {
+  .date-column {
+    max-width: 25%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .date-column {
+    margin-bottom: 0.25rem;
+  }
 }
 
 // Projects

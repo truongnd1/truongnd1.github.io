@@ -13,12 +13,12 @@
       institution: Hanoi Univeristy of Science and Technology, Hanoi, Vietnam
       year: 2023 - Now
       description:
-        - CPA: 3.91/4.00
+        - "CPA: 3.91/4.00"
     - title: Math Honors Class
       institution: Hanoi National University of Education, High School for Gifted Students
       year: 2020 - 2023
       description:
-        - CPA: 9.60/10.00
+        - "CPA: 9.60/10.00"
 
 - title: Experience
   type: time_table
