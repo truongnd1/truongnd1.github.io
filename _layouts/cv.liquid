@@ -2,14 +2,16 @@
 layout: default
 ---
 {% comment %}
-  Unified CV layout that handles both RenderCV (YAML) and JSONResume (JSON) formats
+  Unified CV layout that handles al-folio CV, RenderCV (YAML), and JSONResume (JSON) formats
   - If page.cv_format is set, it determines which format to render:
+    - 'alfolio': Load and render classic al-folio CV data (site.data.cv)
     - 'rendercv': Load and render only RenderCV data (site.data.cv.cv)
     - 'jsonresume': Load and render only JSONResume data (site.data.resume)
   - If page.cv_format is not set, the legacy behavior applies:
+    - al-folio CV data is in site.data.cv
     - RenderCV data is in site.data.cv.cv
     - JSONResume data is in site.data.resume
-    - RenderCV is prioritized if both exist
+    - RenderCV is prioritized if site.data.cv.cv exists
   Both formats use the same unified rendering includes for consistent output
 {% endcomment %}
 
@@ -22,7 +24,7 @@ layout: default
           {% if page.cv_pdf contains '://' %}
             href="{{ page.cv_pdf }}"
           {% else %}
-            href="{{ page.cv_pdf | relative_url }}"
+            href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
           {% endif %}
           target="_blank"
           rel="noopener noreferrer"
@@ -40,23 +42,52 @@ layout: default
   <article>
     <div class="cv">
       {% comment %} Determine which CV format to render {% endcomment %}
+      {% assign render_alfolio_cv = false %}
       {% assign render_rendercv = false %}
       {% assign render_jsonresume = false %}
 
-      {% if page.cv_format == 'rendercv' %}
+      {% if page.cv_format == 'alfolio' %}
+        {% assign render_alfolio_cv = true %}
+      {% elsif page.cv_format == 'rendercv' %}
         {% assign render_rendercv = true %}
       {% elsif page.cv_format == 'jsonresume' %}
         {% assign render_jsonresume = true %}
       {% else %}
-        {% comment %} Legacy behavior: RenderCV takes priority if both exist {% endcomment %}
+        {% comment %} Legacy behavior: RenderCV takes priority if nested data exists; otherwise use classic al-folio CV data. {% endcomment %}
         {% if site.data.cv and site.data.cv.cv %}
           {% assign render_rendercv = true %}
+        {% elsif site.data.cv %}
+          {% assign render_alfolio_cv = true %}
         {% elsif site.data.resume %}
           {% assign render_jsonresume = true %}
         {% endif %}
       {% endif %}
 
-      {% if render_rendercv and site.data.cv and site.data.cv.cv %}
+      {% if render_alfolio_cv and site.data.cv %}
+        {% comment %} Classic al-folio CV format: top-level list of title/type/contents sections {% endcomment %}
+        {% for entry in site.data.cv %}
+          <a class="anchor" id="{{ entry.title }}"></a>
+          <div class="card mt-3 p-3">
+            <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
+            <div>
+              {% if entry.type == 'list' %}
+                {% include cv/list.liquid %}
+              {% elsif entry.type == 'map' %}
+                {% include cv/map.liquid %}
+              {% elsif entry.type == 'nested_list' %}
+                {% include cv/nested_list.liquid %}
+              {% elsif entry.type == 'time_table' %}
+                {% include cv/time_table.liquid %}
+              {% elsif entry.type == 'list_groups' %}
+                {% include cv/list_groups.liquid %}
+              {% else %}
+                {{ entry.contents }}
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+
+      {% elsif render_rendercv and site.data.cv and site.data.cv.cv %}
         {% comment %} RenderCV format {% endcomment %}
         {% assign cv = site.data.cv.cv %}
 
