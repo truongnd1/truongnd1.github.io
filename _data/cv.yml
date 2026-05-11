@@ -30,3 +30,15 @@
       institution: Viettel Group
       year: March 2025 - June 2025
       
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2025
+      items:
+        - HUST Academic Excellence Award.
+    - year: 2024
+      items:
+        - HUST Academic Encouragement Scholarship 2024.1 Semester.
+    - year: 2023
+      items:
+        - HUST Academic Encouragement Scholarship 2023.1 Semester.
