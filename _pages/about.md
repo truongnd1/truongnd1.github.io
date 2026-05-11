@@ -28,4 +28,4 @@ Hi! I'm Truong. I'm an 3rd-year undergraduate student at [Hanoi University of Sc
 
 I’m always open to collaborations, discussions, and exploring new opportunities. Don’t hesitate to reach out if you’re interested in my research or want to discuss potential research projects.
 
-**Research:** 
+**Research:** I explore the fundamentals of machine learning and deep learning to translate deep theoretical insights into practical, impactful applications. My current research emphasizes **optimal transport**, **mathematical optimization**, and the advancement of foundation models.
