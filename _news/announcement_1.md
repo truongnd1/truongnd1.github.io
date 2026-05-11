@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2026-04-30 15:59:00 -0400
 inline: true
-related_posts: false
+title: icml
 ---
 
-A simple inline announcement.
+1 paper **TokenRatio: Principled Token-Level Preference Optimization via Ratio Matching** is accepted at **ICML 2026.**
