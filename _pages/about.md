@@ -24,8 +24,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I'm Truong. I'm an 3rd-year undergraduate student at [Hanoi University of Science and Technology](https://soict.hust.edu.vn/), majoring in Data Science and Artificial Intelligence. In my research, I have the opportunity to work under the supervision of Prof. [Ngo Van Linh](https://scholar.google.com/citations?user=tZ78MoQAAAAJ), Prof. [Trung Le](https://scholar.google.com/citations?user=gysdMxwAAAAJ), and Prof. [Khai Nguyen](https://khainb.com/), on various topics in machine learning.
 
-I’m always open to collaborations, discussions, and exploring new opportunities. Don’t hesitate to reach out if you’re interested in my research or want to discuss potential research projects.
+Hi, I'm Truong, a third-year undergraduate student at [Hanoi University of Science and Technology](https://soict.hust.edu.vn/), majoring in Data Science and Artificial Intelligence. I work under the supervision of Prof. [Ngo Van Linh](https://scholar.google.com/citations?user=tZ78MoQAAAAJ), Prof. [Trung Le](https://scholar.google.com/citations?user=gysdMxwAAAAJ), and Prof. [Khai Nguyen](https://khainb.com/) on various machine learning and deep learning topics.
 
-**Research:** I explore the fundamentals of machine learning and deep learning to translate deep theoretical insights into practical, impactful applications. My current research emphasizes **optimal transport**, **mathematical optimization**, and the advancement of foundation models.
+I welcome collaborations, research discussions, and new opportunities. Feel free to reach out if you want to talk about research projects or shared interests.
+
+**Research:** I study foundations of machine learning and deep learning, turning theoretical insights into practical applications, with focus on **optimal transport**, **mathematical optimization**, and **foundation models**.
