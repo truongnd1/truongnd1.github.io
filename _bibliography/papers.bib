@@ -2,17 +2,19 @@
 ---
 
 @article{ctpd2026, 
-  title={CTPD: Cross Tokenizer Preference Distillation}, 
-  volume={40}, url={https://ojs.aaai.org/index.php/AAAI/article/view/41114}, 
-  DOI={10.1609/aaai.v40i44.41114}, 
-  abstractNote={While knowledge distillation has seen widespread use in pre-training and instruction tuning, its application to aligning language models with human preferences remains underexplored, particularly in the more realistic cross-tokenizer setting. The incompatibility of tokenization schemes between teacher and student models has largely prevented fine-grained, white-box distillation of preference information. To address this gap, we propose Cross-Tokenizer Preference Distillation (CTPD), the first unified framework for transferring human-aligned behavior between models with heterogeneous tokenizers. CTPD introduces three key innovations: (1) Aligned Span Projection, which maps teacher and student tokens to shared character-level spans for precise supervision transfer; (2) a cross-tokenizer adaptation of Token-level Importance Sampling (TIS-DPO) for improved credit assignment; and (3) a Teacher-Anchored Reference, allowing the student to directly leverage the teacher’s preferences in a DPO-style objective. Our theoretical analysis grounds CTPD in importance sampling, and experiments across multiple benchmarks confirm its effectiveness, with significant performance gains over existing methods. These results establish CTPD as a practical and general solution for preference distillation across diverse tokenization schemes, opening the door to more accessible and efficient alignment of language models.}, 
-  number={44}, 
+  abbr = {AAAI},
+  title={CTPD: Cross Tokenizer Preference Distillation},  
+  abstract={While knowledge distillation has seen widespread use in pre-training and instruction tuning, its application to aligning language models with human preferences remains underexplored, particularly in the more realistic cross-tokenizer setting. The incompatibility of tokenization schemes between teacher and student models has largely prevented fine-grained, white-box distillation of preference information. To address this gap, we propose Cross-Tokenizer Preference Distillation (CTPD), the first unified framework for transferring human-aligned behavior between models with heterogeneous tokenizers. CTPD introduces three key innovations: (1) Aligned Span Projection, which maps teacher and student tokens to shared character-level spans for precise supervision transfer; (2) a cross-tokenizer adaptation of Token-level Importance Sampling (TIS-DPO) for improved credit assignment; and (3) a Teacher-Anchored Reference, allowing the student to directly leverage the teacher’s preferences in a DPO-style objective. Our theoretical analysis grounds CTPD in importance sampling, and experiments across multiple benchmarks confirm its effectiveness, with significant performance gains over existing methods. These results establish CTPD as a practical and general solution for preference distillation across diverse tokenization schemes, opening the door to more accessible and efficient alignment of language models.}, 
+  pdf={https://arxiv.org/pdf/2601.11865},
   journal={Proceedings of the AAAI Conference on Artificial Intelligence}, 
-  author={Nguyen, Truong and Van Dat, Phi and Nguyen, Ngan and Van, Linh Ngo and Le, Trung and Nguyen, Thanh Hong}, 
-  year={2026}, month={Mar.}, pages={37783–37790} }
+  author={Nguyen*, Truong and Van Dat, Phi and Nguyen, Ngan and Van, Linh Ngo and Le, Trung and Nguyen, Thanh Hong}, 
+  year={2026},
+  selected={true}
+}
 
-@inproceedings{ta-etal-2026-faid,
-    title = "{FAID}: {F}ine-grained {AI}-generated Text Detection using Multi-task Auxiliary and Multi-level Contrastive Learning",
+@article{ta-etal-2026-faid,
+    abbr = {EACL},
+    title = {{FAID}: {F}ine-grained {AI}-generated Text Detection using Multi-task Auxiliary and Multi-level Contrastive Learning},
     author = "Ta, Minh Ngoc  and
       Nguyen, Truong  and
       Van, Dong Cao  and
@@ -22,17 +24,8 @@
       Wang, Yuxia  and
       Nakov, Preslav  and
       Sang, Dinh Viet",
-    editor = "Demberg, Vera  and
-      Inui, Kentaro  and
-      Marquez, Llu{\'i}s",
-    booktitle = "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
-    month = mar,
-    year = "2026",
-    address = "Rabat, Morocco",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2026.eacl-long.151/",
-    doi = "10.18653/v1/2026.eacl-long.151",
-    pages = "3275--3296",
-    ISBN = "979-8-89176-380-7",
-    abstract = "The growing collaboration between humans and AI models in generative tasks has introduced new challenges in distinguishing between \textit{human-written}, \textit{LLM-generated}, and \textit{human-LLM} collaborative texts. In this work, we collect a multilingual, multi-domain, multi-generator dataset \textit{FAIDSet}. We further introduce a fine-grained detection framework FAID to classify text into these three categories, and also to identify the underlying LLM family of the generator. Unlike existing binary classifiers, FAID is built to capture both authorship and model-specific characteristics. Our method combines multi-level contrastive learning with multi-task auxiliary classification to learn subtle stylistic cues. By modeling LLM families as distinct stylistic entities, we incorporate an adaptation to address distributional shifts without retraining for unseen data. Our experimental results demonstrate that FAID outperforms several baselines, particularly enhancing the generalization accuracy on unseen domains and new LLMs, thus offering a potential solution for improving transparency and accountability in AI-assisted writing. Our data and code are available at \url{https://github.com/mbzuai-nlp/FAID}."
+    journal = {Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics},
+    year = {2026},
+    pdf = {https://aclanthology.org/2026.eacl-long.151.pdf},
+    abstract = {The growing collaboration between humans and AI models in generative tasks has introduced new challenges in distinguishing between \textit{human-written}, \textit{LLM-generated}, and \textit{human-LLM} collaborative texts. In this work, we collect a multilingual, multi-domain, multi-generator dataset \textit{FAIDSet}. We further introduce a fine-grained detection framework FAID to classify text into these three categories, and also to identify the underlying LLM family of the generator. Unlike existing binary classifiers, FAID is built to capture both authorship and model-specific characteristics. Our method combines multi-level contrastive learning with multi-task auxiliary classification to learn subtle stylistic cues. By modeling LLM families as distinct stylistic entities, we incorporate an adaptation to address distributional shifts without retraining for unseen data. Our experimental results demonstrate that FAID outperforms several baselines, particularly enhancing the generalization accuracy on unseen domains and new LLMs, thus offering a potential solution for improving transparency and accountability in AI-assisted writing. Our data and code are available at \url{https://github.com/mbzuai-nlp/FAID}.}
 }
