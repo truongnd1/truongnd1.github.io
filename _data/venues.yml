@@ -14,6 +14,10 @@
   url: https://icml.cc/
   color: "#4E6C50"
 
+"Preprint":
+  url: https://arxiv.org/
+  color: "#7A4EAB"
+
 "ICLR":
   url: https://iclr.cc/
   color: "#820000"
