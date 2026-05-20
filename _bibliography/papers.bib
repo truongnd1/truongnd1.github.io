@@ -1,9 +1,22 @@
 ---
 ---
 
+@article{muon,
+  abbr={Preprint},
+  title={Spectral Flattening Is All Muon Needs: How Orthogonalization Controls Learning Rate and Convergence}, 
+  abstract={Muon orthogonalizes the momentum buffer before each update, replacing its singular values with ones via Newton-Schulz iterations. This simple change lets Muon tolerate far larger learning rates and converge faster than other optimizers, but why? We show that the mechanism is spectral flattening, and develop two results around it. First, we prove that Muon's maximal stable step size scales with the average singular value of the gradient rather than the largest, which bottlenecks standard gradient descent. Second, we recast Muon as a preconditioned gradient method and show, under a Kronecker-factored curvature model, that it improves the effective convergence factor, with the improvement controlled by the spectrum of the gradient covariance. Extensive experiments validate both results: Muon remains stable at learning rates that cause SGD to diverge within the first few iterations, and reaches accuracy milestones several epochs earlier even at identical step sizes. Taken together, our results offer a principled, geometric explanation for Muon's empirical success.},
+  author={Truong Nguyen* and Tien-Phat Nguyen* and Minh-Phuc Truong* and Tuc Nguyen and James Bailey and Trung Le},
+  year={2026},
+  selected={true},
+  journal={Under review},
+  preview={muon.png},
+  pdf={https://arxiv.org/pdf/2605.13079}, 
+}
+
 @article{bso,
   abbr = {Preprint},
   title={BSO: Safety Alignment Is Density Ratio Matching}, 
+  abstract={Aligning language models for both helpfulness and safety typically requires complex pipelines-separate reward and cost models, online reinforcement learning, and primal-dual updates. Recent direct preference optimization approaches simplify training but incorporate safety through ad-hoc modifications such as multi-stage procedures or heuristic margin terms, lacking a principled derivation. We show that the likelihood ratio of the optimal safe policy admits a closed-form decomposition that reduces safety alignment to a density ratio matching problem. Minimizing Bregman divergences between the data and model ratios yields Bregman Safety Optimization (BSO), a family of single-stage loss functions, each induced by a convex generator, that provably recover the optimal safe policy. BSO is both general and simple: it requires no auxiliary models, introduces only one hyperparameter beyond standard preference optimization, and recovers existing safety-aware methods as special cases. Experiments across safety alignment benchmarks show that BSO consistently improves the safety-helpfulness trade-off.},
   author={Tien-Phat Nguyen* and Truong Nguyen* and Thin Nguyen and Duy Minh Ho Nguyen and Ngoc-Thanh Dinh and Trung Le},
   year={2026},
   selected={true},
@@ -15,6 +28,7 @@
 @article{nguyen2026tokenratio,
   abbr = {ICML},
   title={TokenRatio: Principled Token-Level Preference Optimization via Ratio Matching}, 
+  abstract={Direct Preference Optimization (DPO) is a widely used RL-free method for aligning language models from pairwise preferences, but it models preferences over full sequences even though generation is driven by per-token decisions. Existing token-level extensions typically decompose a sequence-level Bradley-Terry objective across timesteps, leaving per-prefix (state-wise) optimality implicit. We study how to recover token-level preference optimality using only standard sequence-level pairwise comparisons. We introduce Token-level Bregman Preference Optimization (TBPO), which posits a token-level Bradley-Terry preference model over next-token actions conditioned on the prefix, and derive a Bregman-divergence density-ratio matching objective that generalizes the logistic/DPO loss while preserving the optimal policy induced by the token-level model and maintaining DPO-like simplicity. We introduce two instantiations: TBPO-Q, which explicitly learns a lightweight state baseline, and TBPO-A, which removes the baseline through advantage normalization. Across instruction following, helpfulness/harmlessness, and summarization benchmarks, TBPO improves alignment quality and training stability and increases output diversity relative to strong sequence-level and token-level baselines.},
   author={Truong Nguyen* and Tien-Phat Nguyen* and Linh Ngo Van and Duy Minh Ho Nguyen and Khoa D. Doan and Trung Le},
   year={2026},
   journal = {Proceedings of the International Conference on Machine Learning},
