@@ -24,7 +24,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-
 Hi, I'm Truong, a third-year undergraduate student at [Hanoi University of Science and Technology](https://soict.hust.edu.vn/), majoring in Data Science and Artificial Intelligence. I work under the supervision of Prof. [Ngo Van Linh](https://scholar.google.com/citations?user=tZ78MoQAAAAJ), Prof. [Trung Le](https://scholar.google.com/citations?user=gysdMxwAAAAJ), and Prof. [Khai Nguyen](https://khainb.com/) on various machine learning and deep learning topics.
 
 I welcome collaborations, research discussions, and new opportunities. Feel free to reach out if you want to talk about research projects or shared interests.
