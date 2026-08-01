@@ -7,7 +7,7 @@
   abstract={Muon orthogonalizes the momentum buffer before each update, replacing its singular values with ones via Newton-Schulz iterations. This simple change lets Muon tolerate far larger learning rates and converge faster than other optimizers, but why? We show that the mechanism is spectral flattening, and develop two results around it. First, we prove that Muon's maximal stable step size scales with the average singular value of the gradient rather than the largest, which bottlenecks standard gradient descent. Second, we recast Muon as a preconditioned gradient method and show, under a Kronecker-factored curvature model, that it improves the effective convergence factor, with the improvement controlled by the spectrum of the gradient covariance. Extensive experiments validate both results: Muon remains stable at learning rates that cause SGD to diverge within the first few iterations, and reaches accuracy milestones several epochs earlier even at identical step sizes. Taken together, our results offer a principled, geometric explanation for Muon's empirical success.},
   author={Truong Nguyen* and Tien-Phat Nguyen* and Minh-Phuc Truong* and Tuc Nguyen and James Bailey and Trung Le},
   year={2026},
-  selected={true},
+  selected={false},
   journal={Under review},
   preview={muon.png},
   pdf={https://arxiv.org/pdf/2605.13079}, 
