@@ -28,6 +28,6 @@ Hi, I'm Truong, a final-year undergraduate student at [Hanoi University of Scien
 
 I welcome collaborations, research discussions, and new opportunities. Feel free to reach out if you want to talk about research projects or shared interests.
 
-**Research:** My work has explored foundational questions in machine learning and deep learning, with an emphasis on translating theoretical insights into practical applications. I am increasingly interested in theoretical ML, particularly in understanding learning and decision-making through probability distributions, their geometry, and their dynamics.
+**Research:** My work has explored foundational questions in machine learning and deep learning, with an emphasis on translating **theoretical insights** into practical applications. I am increasingly interested in **theoretical ML**: understanding why modern learning methods work, especially through a **distributional perspective**, and using those principles to design new methods.
 
-**Keywords:** Density Ratio Estimation, Optimal Transport, RL for LLMs.
+**Keywords:** Density Ratio Estimation, Optimal Transport, RL for LLMs, Learning Theory.
