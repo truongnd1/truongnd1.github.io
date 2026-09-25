@@ -6,7 +6,7 @@ permalink: /
 
 profile:
   align: right
-  image: avt3.jpg
+  image: animated_avt.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
 
