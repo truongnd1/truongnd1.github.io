@@ -24,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I'm Truong, a final-year undergraduate student at [Hanoi University of Science and Technology](https://soict.hust.edu.vn/), majoring in Data Science and Artificial Intelligence. I work under the supervision of Prof. [Ngo Van Linh](https://scholar.google.com/citations?user=tZ78MoQAAAAJ), Prof. [Trung Le](https://scholar.google.com/citations?user=gysdMxwAAAAJ), and Prof. [Khai Nguyen](https://khainb.com/) on various machine learning and deep learning topics. I'm also a research resident at [Qualcomm AI Research](https://www.qualcomm.com/research/artificial-intelligence), under the supervision of Dr. [Toan Tran](https://scholar.google.com.vn/citations?user=PnwSuNMAAAAJ).
+Hi, I'm Truong, a final-year undergraduate student at [Hanoi University of Science and Technology](https://soict.hust.edu.vn/), majoring in Data Science and Artificial Intelligence. I work under the supervision of Prof. [Ngo Van Linh](https://scholar.google.com/citations?user=tZ78MoQAAAAJ), Prof. [Trung Le](https://scholar.google.com/citations?user=gysdMxwAAAAJ), and Prof. [Khai Nguyen](https://khainb.com/) on various machine learning and deep learning topics. I'm also a research resident at [Qualcomm AI Research](https://www.qualcomm.com/research/artificial-intelligence), under the supervision of Prof. [Dinh Phung](https://research.monash.edu/en/persons/dinh-phung/) and Dr. [Toan Tran](https://scholar.google.com.vn/citations?user=PnwSuNMAAAAJ).
 
 I welcome collaborations, research discussions, and new opportunities. Feel free to reach out if you want to talk about research projects or shared interests.
 
